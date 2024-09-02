@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->integer('block_height');
+            $table->string('block_height');
             $table->string('total_transaction');
             $table->string('created_at');
         });
